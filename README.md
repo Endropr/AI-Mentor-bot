@@ -1,4 +1,4 @@
-# 🤖 AI Programming Mentor Bot
+# AI Programming Mentor Bot
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/Endropr/ai-programming-mentor)](https://goreportcard.com/report/github.com/Endropr/ai-programming-mentor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -24,10 +24,11 @@ Following the **Standard Go Project Layout**, the code is organized into logical
 
 ```text
 ai-programming-mentor/
+├── assets/            # UI screenshots and database previews
 ├── cmd/bot/           # Entry point: Bot initialization and update loop
 ├── internal/
-│   ├── domain/        # Core entities: Business models (Message, User)
-│   └── repository/    # Data Layer: PostgreSQL implementation (Save/Load logic)
+│   └── domain/        # Core entities: Business models (Message, User)
+│       └── repository/# Data Layer: PostgreSQL implementation (Save/Load logic)
 ├── migrations/        # SQL scripts: Schema definition and table structures
 ├── .env.example       # Environment configuration template
 └── README.md          # Project documentation
