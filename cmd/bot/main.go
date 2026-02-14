@@ -32,7 +32,7 @@ func main() {
 	}
 	updates := bot.GetUpdatesChan(tgbotapi.NewUpdate(0))
 
-	// 3. Опен аи клиент
+	// Опен аи клиент
 	aiClient := openai.NewClient(os.Getenv("OPENAI_API_KEY"))
 
 	// Хранилище языков в серве
@@ -99,7 +99,6 @@ func main() {
 
 			msg := tgbotapi.NewMessage(update.Message.Chat.ID, msgText)
 
-			// ВОТ ЭТА СТРОКА ВКЛЮЧАЕТ ЖИРНЫЙ ШРИФТ И ТЕГИ
 			msg.ParseMode = "HTML"
 
 			keyboard := tgbotapi.NewInlineKeyboardMarkup(
@@ -118,8 +117,6 @@ func main() {
 			bot.Send(msg)
 			continue
 		}
-
-		// Обработка дефолт сообщений
 
 		// Определяем текущий язык
 		currentLang := userLanguages[update.Message.From.ID]
