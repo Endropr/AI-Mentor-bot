@@ -80,21 +80,6 @@ OPENAI_API_KEY=your_key
 DB_URL=postgres://user:password@localhost:5432/dbname
 ```
 
-## 3. Database Initialization
-
-Run the following SQL command to set up the storage:
-
-```
-CREATE TABLE messages (
-    id SERIAL PRIMARY KEY,
-    user_id BIGINT,
-    role VARCHAR(20),
-    content TEXT,
-    selected_language VARCHAR(20),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
 ## 4. Running the Bot
 
 ```
