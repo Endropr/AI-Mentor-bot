@@ -80,7 +80,7 @@ OPENAI_API_KEY=your_key
 DB_URL=postgres://user:password@localhost:5432/dbname
 ```
 
-## 4. Running the Bot
+### 3. Running the Bot
 
 ```
 go run cmd/bot/main.go
