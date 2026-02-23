@@ -115,6 +115,7 @@ go run cmd/bot/main.go
 
   <br>
 
+
   ### Database Logs (PostgreSQL)
   <p align="left">
     <img src="assets/db_full_preview.png" alt="Database Logs" width="900"/>
