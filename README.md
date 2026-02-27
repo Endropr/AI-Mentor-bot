@@ -4,11 +4,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An advanced Telegram bot built with **Go** that serves as a personal coding mentor. The system leverages **OpenAI's LLMs** to provide expert-level guidance, featuring persistent conversation history and a modular architecture.
-
+   
 ---
 
 ## Key Features
-
+  
 * **Interactive Specialization Selection**: Users can choose their learning track (Go, Python, JS, C++, PHP, HTML/CSS) via a sleek, multi-row inline keyboard.
 * **Context-Aware Mentorship**: The bot maintains the state of the selected programming language for each user, ensuring personalized guidance.
 * **Clean Architecture**: Strictly follows a modular design (Domain, Repository, Application layers), making the codebase easy to scale and maintain.
@@ -16,7 +16,7 @@ An advanced Telegram bot built with **Go** that serves as a personal coding ment
 * **Persistent Storage**: Full audit logs and user preferences are stored in a **PostgreSQL** database with high-performance interaction via the `pgx` driver.
 * **Rich UI/UX**: Utilizes HTML-formatted responses and real-time callback feedback for a professional look and feel.
 
----
+---  
 
 ## Project Structure
 
